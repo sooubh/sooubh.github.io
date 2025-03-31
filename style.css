@@ -6,6 +6,8 @@
 
 body {
   background-image: url("img/body-bg.jpg");
+  background-size: contain;
+  width: 100%;
 }
 
 .ripple {
