@@ -307,171 +307,65 @@
 
   </div>
   <!-- my team section -->
-  <div class="team-text">
-    <div class="team-para">Team</div>
-    <div class="team-head">Meet My Team</div>
-  </div>
-  <div class="my-team">
-    <div class="team-info-first">
-      <div class="first-content">
-        <span>Meet My Team</span>
+  <section class="team-section">
+    <h2>
+      Partnered with most of the<br />
+      <span>top people at each industry</span>
+    </h2>
+  
+    <div class="team-carousel">
+      <button class="team-nav" onclick="scrollLeft()">&#8249;</button>
+      
+      <div class="team-cards-container" id="team-cards">
+        
+        <!-- Card 1 -->
+        <div class="team-card">
+          <img src="https://via.placeholder.com/300x300?text=Yomi+Denzel" alt="Yomi Denzel" />
+          <h3>Yomi Denzel</h3>
+          <p>E-Commerce 2.0</p>
+        </div>
+  
+        <!-- Description Card -->
+        <div class="team-card team-description-card">
+          <h3>Timothée Moiroux</h3>
+          <p class="team-subtitle">Investissement Immobilier</p>
+          <p class="team-desc">
+            It was in high school, then a student, that Timothée understood the true freedom offered by studying as well as a future professional career in parallel with his financial studies. He made his first real estate and financial investments and created his first company.
+          </p>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="team-card">
+          <img src="https://via.placeholder.com/300x300?text=David+Sequiera" alt="David Sequiera" />
+          <h3>David Sequiera</h3>
+          <p>Closing</p>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="team-card">
+          <img src="https://via.placeholder.com/300x300?text=Manuel+Ravier" alt="Manuel Ravier" />
+          <h3>Manuel Ravier</h3>
+          <p>Investissement Immobilier</p>
+        </div>
+  
       </div>
-      <div class="second-content">
-
-        <span>
-          <h3 style="text-align: center;">Meet My Team</h3><br><br>Behind every successful project is a team of
-          passionate and skilled professionals, and I’m proud to work
-          with a team of 12 highly talented individuals. Each member brings unique expertise, ranging from front-end
-          design to back-end development, UI/UX design, SEO, and more.<br><br>Our strength lies in our seamless
-          coordination, open communication, and problem-solving mindset. Together,
-          we’ve delivered exceptional solutions, tackling complex challenges with creativity and efficiency. With
-          diverse skill sets and a shared passion for web development, we work as one cohesive unit to bring innovative
-          ideas to life. <br><br>
-
-          My team is a perfect blend of talent, innovation, and diversity, made up of 12 skilled professionals
-          specializing in different domains like coding, design, content, testing, and more. Each team member brings
-          something unique to the table, ensuring every project is crafted with precision and creativity.
-
-          What sets us apart is our collaborative spirit. From brainstorming sessions to final deployment, we work
-          hand-in-hand to achieve the best outcomes. Our shared vision to create impactful digital experiences drives us
-          forward, and we are committed to delivering excellence in every project.
-        </span>
-      </div>
+  
+      <button class="team-nav" onclick="scrollRight()">&#8250;</button>
     </div>
-    <div style="--total: 12;" class="circle-wrapper">
-      <div class="center-element-team">The Team</div>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-1">
-      <label id="avatar-1" for="radio-avatar-1" class="avatar team-lable" style="--i:1">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=12" alt="Steven Robinson">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Sourabh Singh - Web Developer</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-2">
-      <label id="avatar-2" for="radio-avatar-2" class="avatar team-lable" style="--i:2">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=37" alt="Mari Johnson">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Pratiksha Patil - UX Designer</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-3">
-      <label id="avatar-3" for="radio-avatar-3" class="avatar team-lable" style="--i:3">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=3" alt="Bob">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Tejas Patil - Designer</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-4">
-      <label id="avatar-4" for="radio-avatar-4" class="avatar team-lable" style="--i:4">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=48" alt="Susan Williams">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Susan Williams - Full Stack Developer</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-5">
-      <label id="avatar-5" for="radio-avatar-5" class="avatar team-lable" style="--i:5">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=52" alt="James Braun">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Raj Nikam - Content Creator</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-6">
-      <label id="avatar-6" for="radio-avatar-6" class="avatar team-lable" style="--i:6">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=33" alt="Andrew Charles">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Andrew Charles - Front End Developer</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-7">
-      <label id="avatar-7" for="radio-avatar-7" class="avatar team-lable" style="--i:7">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=44" alt="Jane Dobson">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Jane Dobson - Social Media Manager</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-8">
-      <label id="avatar-8" for="radio-avatar-8" class="avatar team-lable" style="--i:8">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=13" alt="Ryan Williams">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Ryan Williams - Back End Developer</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-9">
-      <label id="avatar-9" for="radio-avatar-9" class="avatar team-lable" style="--i:9">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=14" alt="Ralph Heartling">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Ralph Heartling - Full Stack Developer</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-10">
-      <label id="avatar-10" for="radio-avatar-10" class="avatar team-lable" style="--i:10">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=15" alt="Bryan Davidson">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Bryan Davidson - Team Leader</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-11">
-      <label id="avatar-11" for="radio-avatar-11" class="avatar team-lable" style="--i:11">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=16" alt="Angie Jameson">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Angie Jameson - Front End Developer</textPath>
-          </text>
-        </svg>
-      </label>
-
-      <input type="radio" name="radio-avatar" id="radio-avatar-12">
-      <label id="avatar-12" for="radio-avatar-12" class="avatar team-lable" style="--i:12">
-        <img class="team-image" src="https://i.pravatar.cc/300?img=17" alt="Raymond Simpson">
-        <svg viewBox="0 0 300 300">
-          <text fill="currentColor">
-            <textPath xlink:href="#circlePath">Raymond Simpson - CEO and Entrepreneur</textPath>
-          </text>
-        </svg>
-      </label>
-
-    </div>
-
-    <!-- SVG template for dynamic text -->
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 300 300" width="0" height="0">
-      <defs>
-        <path id="circlePath" d="M 150, 150 m -100, 0 a 100,100 0 0,1 200,0 a 100,100 0 0,1 -200,0" />
-      </defs>
-    </svg>
-
-  </div>
+  </section>
+  
+  <script>
+    const container = document.getElementById("team-cards");
+  
+    function scrollLeft() {
+      container.scrollBy({ left: -320, behavior: "smooth" });
+    }
+  
+    function scrollRight() {
+      container.scrollBy({ left: 320, behavior: "smooth" });
+    }
+  </script>
+  
   <!-- Portfoilio Section -->
   <div class="portfolio-section">
     <section class="port-portfolio">
@@ -722,8 +616,6 @@
     </div>
     <hr>
 </div>
-
-
 
 
 
