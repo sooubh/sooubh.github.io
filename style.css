@@ -1537,7 +1537,7 @@ hr {
     }
 }
 
-/* Section Heading */
+/* Team Section */
 .team-section {
   padding: 60px 20px;
   text-align: center;
@@ -1556,10 +1556,10 @@ hr {
   margin-top: 8px;
 }
 
-/* Carousel Layout */
+/* Carousel */
 .team-carousel {
   display: flex;
-  align-items: center; /* center arrow icons vertically */
+  align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: 50px;
@@ -1571,76 +1571,138 @@ hr {
 .team-cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   padding: 20px;
   justify-content: center;
-  overflow: hidden;
-  touch-action: pan-x;
-  max-width: 90vw;
-
-  /* Hide scrollbar (all browsers) */
-  scrollbar-width: none; /* Firefox */
+  overflow-x: auto;
+  max-width: 95vw;
+  scrollbar-width: none;
 }
+
 .team-cards-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
 }
 
 /* Individual Card */
 .team-card {
-  background: #161632;
+  background-image: url("img/team/bg-team.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  width: 360px;
+  height: 460px;
   border-radius: 20px;
-  padding: 20px;
-  width: 220px;
-  text-align: left;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
   flex-shrink: 0;
 }
+
 
 .team-card:hover {
   transform: scale(1.03);
 }
 
-/* Card Image */
-.team-card img {
+/* Image Section */
+.card-image {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-image img {
   width: 100%;
-  height: auto;
-  border-radius: 14px;
-  margin-bottom: 16px;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Card Info */
-.team-card h3 {
-  margin: 0;
-  font-size: 1.1rem;
+/* Info Inside Card */
+.card-content {
+  padding: 10px 15px;
+  text-align: left;
 }
 
-.team-card p {
-  margin-top: 6px;
-  color: #ccc;
+.card-content h3 {
+  margin-top: -100px;
+  font-size: 2rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+.card-content p {
+  color: #b9b6b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content .designation {
   font-size: 0.9rem;
+  color: #fffefe;
 }
 
-/* Description-style Card */
-.team-description-card {
-  background: linear-gradient(to bottom, #1e1e4d, #1a1a3d);
+/* Hover Content */
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e1e4dda;
   color: white;
-  min-height: 280px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.team-description-card .team-subtitle {
+.team-card:hover .hover-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover Content Styling */
+.hover-content h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.hover-content .designation {
+  font-size: 1rem;
   color: #8aa2f9;
-  margin-top: 8px;
-  font-size: 0.95rem;
+  margin-bottom: 15px;
 }
 
-.team-description-card .team-desc {
-  margin-top: 12px;
-  font-size: 0.85rem;
+.hover-content .team-desc {
+  font-size: 0.9rem;
   line-height: 1.5;
+  flex-grow: 1;
 }
 
-/* Navigation Arrows */
+/* Contact Button */
+.contact-btn {
+  background-color: #8aa2f9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+}
+
+.contact-btn:hover {
+  background-color: #6c87ec;
+}
+
+/* Nav Buttons */
 .team-nav {
   background: transparent;
   border: none;
@@ -1654,39 +1716,28 @@ hr {
 }
 
 .team-nav:hover {
-  color: white;
+  color: black;
 }
 
-/* Responsive Styles */
+/* Responsive */
 @media (max-width: 768px) {
-  .team-section h2 {
-    font-size: 1.8rem;
-  }
-
-  .team-section h2 span {
-    font-size: 1.3rem;
-  }
-
   .team-card {
     width: 90%;
     max-width: 300px;
-    margin: 0 auto;
   }
 
   .team-carousel {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .team-cards-container {
-    flex-direction: column;
-    align-items: center;
   }
 
   .team-nav {
     display: none;
   }
-} 
+}
+
+
+
+
 
 /* portfoio section */
 .portfolio-section {
