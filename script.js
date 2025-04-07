@@ -1,5 +1,4 @@
 document.onclick = () => applyCursorRippleEffect(event);
-
 function applyCursorRippleEffect(e) {
    const ripple = document.createElement("div");
   
@@ -15,15 +14,12 @@ function applyCursorRippleEffect(e) {
    }
   
 }
-
 // extra and optional part:
-
 const all = document.body.getElementsByTagName("*");
 for (var i = 0;  i < all.length; ++i) {
   all[i].onclick = (event) => event.stopPropagation();
 }
-
-
+// Sidebar toggle functionality
 function showSidebar(){
   const sidebar = document.querySelector('.nav-list-mobile')
   sidebar.style.display = 'flex'
@@ -32,3 +28,4 @@ function hideSidebar(){
    const sidebar = document.querySelector('.nav-list-mobile')
   sidebar.style.display = 'none'
 }
+// End of sidebar toggle functionality

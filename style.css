@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("img/body-bg.jpg");
+  background-image: url("img/body-bg.webp");
   background-size: contain;
   max-width: 100vw;  overflow-x: hidden;
 
@@ -33,7 +33,6 @@ html {
 
 nav {
   background-color: #282f36;
-  /* background-image: url('img/hero-section/slider-bg.jpg'); */
   height: 60px;
   top: 0;
   width: 100%;
@@ -50,7 +49,7 @@ nav {
 }
 
 .logo {
-  background-image: url("img/navbar-img/logo.png");
+  background-image: url("img/navbar-img/logo.webp");
   background-size: cover;
   height: 40px;
   width: 170px;
@@ -200,7 +199,7 @@ display: flex;
 }
 
 .hero-background {
-  background-image: url("img/hero-section/slider-bg.jpg");
+  background-image: url("img/hero-section/slider-bg.webp");
   align-items: center;
   justify-content: space-evenly;
   background-size: cover;
@@ -392,7 +391,7 @@ display: flex;
 }
 .hero-img {
  
-  background-image: url("img/hero-section/hero.png");
+  background-image: url("img/hero-section/hero.webp");
   height: 100%;
   width: 500px;
   display: flex;
@@ -414,7 +413,7 @@ display: flex;
   z-index: 1;
 }
 .hero-background {
-  background-image: url("img/hero-section/slider-bg.jpg");
+  background-image: url("img/hero-section/slider-bg.webp");
   justify-content: center;
   background-size: cover;
   width: 100%;
@@ -545,7 +544,7 @@ justify-content: center;
 }
 
 .hero-img { 
-  background-image: url("img/hero-section/hero.png");
+  background-image: url("img/hero-section/hero.webp");
   height: 260px;
   width: 260px;
 bottom: 0;
@@ -786,7 +785,7 @@ bottom: 0;
   height: 60px;
   width: 60px;
   background-size: cover;
-  background-image: url("img/about-img/dedication.png");
+  background-image: url("img/about-img/dedication.webp");
 }
 
 .about-list1-head-text {
@@ -821,7 +820,7 @@ bottom: 0;
   height: 60px;
   width: 60px;
   background-size: cover;
-  background-image: url("img/about-img/project-management.png");
+  background-image: url("img/about-img/project-management.webp");
 }
 
 .about-list2-head-text {
@@ -852,7 +851,7 @@ bottom: 0;
   height: 60px;
   width: 60px;
   background-size: cover;
-  background-image: url("img/about-img/team.png");
+  background-image: url("img/about-img/team.webp");
 }
 .about-list3-head-text {
   margin-top: 40px;
@@ -884,7 +883,7 @@ bottom: 0;
   height: 60px;
   width: 60px;
   background-size: cover;
-  background-image: url("img/about-img/working.png")
+  background-image: url("img/about-img/working.webp")
 }
 
 .about-list4-head-text {
@@ -937,7 +936,7 @@ bottom: 0;
   height: 40px;
   width: 40px;
   background-size: cover;
-  background-image: url("img/about-img/dedication.png");
+  background-image: url("img/about-img/dedication.webp");
 }
 
 .about-list1-head-text {
@@ -973,7 +972,7 @@ bottom: 0;
   height: 40px;
   width: 40px;
   background-size: cover;
-  background-image: url("img/about-img/dedication.png");
+  background-image: url("img/about-img/dedication.webp");
 }
 
 .about-list2-head-text {
@@ -1009,7 +1008,7 @@ bottom: 0;
   height: 40px;
   width: 40px;
   background-size: cover;
-  background-image: url("img/about-img/dedication.png");
+  background-image: url("img/about-img/dedication.webp");
 }
 
 .about-list3-head-text {
@@ -1046,7 +1045,7 @@ bottom: 0;
   height: 40px;
   width: 40px;
   background-size: cover;
-  background-image: url("img/about-img/dedication.png");
+  background-image: url("img/about-img/dedication.webp");
 }
 
 .about-list4-head-text {
@@ -1585,7 +1584,7 @@ hr {
 
 /* Individual Card */
 .team-card {
-  background-image: url("img/team/bg-team.jpg");
+  background-image: url("img/team/bg-team.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1878,7 +1877,7 @@ hr {
   padding-top: 50px;
   height: 700px;
   width: 100%;
-  background: url('img/counter/counter-bg.jpg') center/cover no-repeat;
+  background: url('img/counter/counter-bg.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
 }
@@ -1980,7 +1979,7 @@ hr {
 
 @media screen and (max-width: 495px) {
   .number-counter {
-    background-image: url('img/counter/Counter-bg-ver.jpg');
+    background-image: url('img/counter/Counter-bg-ver.webp');
     display: block;
     height: 800px;
   }
@@ -2090,19 +2089,19 @@ hr {
 
 .achiv-logo-1-img {
   width: 12.5rem;
-  background-image: url("img/awards/google-logo.png");
+  background-image: url("img/awards/google-logo.webp");
   
 }
 
 .achiv-logo-2-img {
   width: 13.4375rem;
-  background-image: url("img/awards/microsoft-logo.png");
+  background-image: url("img/awards/microsoft-logo.webp");
   background-size: contain;
 }
 
 .achiv-logo-3-img {
   width: 12.5rem;
-  background-image: url("img/awards/amazon-logo.png");
+  background-image: url("img/awards/amazon-logo.webp");
   background-size: contain;
 }
 
