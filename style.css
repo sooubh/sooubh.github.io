@@ -1745,6 +1745,9 @@ hr {
   font-family: 'Roboto', sans-serif;
 
 }
+.port-mainContainer{
+  height: 100%;
+}
 
 .port-portfolio {
   width: 100%;
@@ -1872,6 +1875,7 @@ hr {
   }
 }
 
+/* number */
 
 .number-counter {
   padding-top: 50px;
@@ -1944,22 +1948,22 @@ hr {
 
 /* Mobile Styles */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .counters-b1, 
   .counters-b2, 
   .counters-b3, 
   .counters-b4 {
-    height: 150px;
-    width: 240px;
+    height: 130px;
+    width: 215px;
   }
 
   .counters-number {
-    font-size: 3.6rem;
+    font-size: 3rem;
     margin-left: 15px;
   }
 
   .counters-text {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .number-counter-text{
      height: auto;
@@ -1974,6 +1978,7 @@ hr {
     justify-content: center;
     width: 100%;
     margin-top: 10px;
+    font-size: 1.5rem;
   }
 }
 
