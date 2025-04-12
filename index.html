@@ -1,671 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Professional portfolio showcasing web development and design expertise"
+    />
 
-<head>
-  <!-- Essential Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="description" content="Professional portfolio showcasing web development and design expertise">
+    <!-- Title -->
+    <title>Sourabh Singh | Full Stack Developer & Designer</title>
 
-  <!-- Title -->
-  <title>Sourabh Singh | Full Stack Developer & Designer</title>
+    <!-- Preconnect for External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-  <!-- Preconnect for External Resources -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- Font Awesome with Subresource Integrity -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Font Awesome with Subresource Integrity -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Google Fonts with display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts with display=swap -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Main Stylesheets -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png">
+    <!-- Social Media Meta Tags -->
+    <meta
+      property="og:title"
+      content="Sourabh Singh | Full Stack Developer & Designer"
+    />
+    <meta
+      property="og:description"
+      content="Professional portfolio showcasing web development and design expertise"
+    />
+    <meta property="og:image" content="/social-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Social Media Meta Tags -->
-  <meta property="og:title" content="Sourabh Singh | Full Stack Developer & Designer">
-  <meta property="og:description" content="Professional portfolio showcasing web development and design expertise">
-  <meta property="og:image" content="/social-preview.png">
-  <meta name="twitter:card" content="summary_large_image">
+    <!-- Non-render-blocking Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="script.js"></script>
+  </head>
 
-  <!-- Non-render-blocking Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
-  <script src="script.js"></script>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="nav-logo">
-        <div class="logo"></div>
-      </div>
-      <div class="checkbutton">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars sidebar-logo" onclick=showSidebar()><a href="#"></a></i>
-          <div class="nav-list-mobile">
-            <i class="fa-solid fa-xmark close-menu" onclick=hideSidebar()></i><a href="#"></a>
-            <ul>
-
-              <li> <a href="">Home</a></li>
-              <li> <a href="">About</a></li>
-              <li> <a href="">Works</a></li>
-              <li> <a href="">Services</a></li>
-              <li> <a href="">Contact</a></li>
-              <li> <a href="">Blog</a></li>
-
-            </ul>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <div class="logo"></div>
+        </div>
+        <div class="checkbutton">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars sidebar-logo" onclick="showSidebar()"
+              ><a href="#"></a
+            ></i>
+            <div class="nav-list-mobile">
+              <i
+                class="fa-solid fa-xmark close-menu"
+                onclick="hideSidebar()"
+              ></i
+              ><a href="#"></a>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+          </label>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Works</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-background">
+        <div class="hero-text">
+          <p class="hero-text-first-line">HELLO I'M</p>
+          <p class="hero-text-name-line">Sourabh</p>
+          <p class="hero-text-name1-line">Singh</p>
+          <div class="auto-type-container">
+            <h1 class="auto-type-h1">A Passionate_</h1>
+            <span class="auto-type"></span>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+              var typed = new Typed(".auto-type", {
+                strings: [
+                  "Programmer",
+                  "Web Developer",
+                  "App Developer",
+                  "Gamer",
+                  "Youtuber",
+                ],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true,
+              });
+            </script>
           </div>
-        </label>
+          <div class="button-text">
+            <a href="#"><span class="auto-type-span">New to you</span></a>
+          </div>
+        </div>
+        <div class="hero-img-container">
+          <div class="hero-img"></div>
+        </div>
       </div>
-      <div class="nav-list">
-        <ul>
-          <li> <a href="">Home</a></li>
-          <li> <a href="">About</a></li>
-          <li> <a href="">Works</a></li>
-          <li> <a href="">Services</a></li>
-          <li> <a href="">Contact</a></li>
-          <li> <a href="">Blog</a></li>
-
+      <div class="social-menu">
+        <ul class="wrapper">
+          <li class="icon facebook">
+            <span class="tooltip social-menu-span">Facebook</span>
+            <span class="social-menu-span"
+              ><i class="fab fa-facebook-f"></i
+            ></span>
+          </li>
+          <li class="icon twitter">
+            <span class="tooltip social-menu-span">Twitter</span>
+            <span
+              ><a href="https://x.com/sourabh_singgh"
+                ><i class="fab fa-x-twitter"></i></a
+            ></span>
+          </li>
+          <li class="icon instagram">
+            <span class="tooltip social-menu-span">Instagram</span>
+            <span class="social-menu-span"
+              ><i class="fab fa-instagram"></i
+            ></span>
+          </li>
+          <li class="icon github">
+            <span class="tooltip social-menu-span">Github</span>
+            <span class="social-menu-span"><i class="fab fa-github"></i></span>
+          </li>
+          <li class="icon youtube">
+            <span class="tooltip social-menu-span">Youtube</span>
+            <span class="social-menu-span"><i class="fab fa-youtube"></i></span>
+          </li>
         </ul>
       </div>
-    </nav>
-
-  </header>
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-background">
-      <div class="hero-text">
-        <p class="hero-text-first-line">HELLO I'M</p>
-        <p class="hero-text-name-line">Sourabh</p>
-        <p class="hero-text-name1-line">Singh</p>
-        <div class="auto-type-container">
-          <h1 class="auto-type-h1">A Passionate_</h1><span class="auto-type"></span>
-          <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-          <script>
-            var typed = new Typed(".auto-type", {
-              strings: ["Programmer", "Web Developer", "App Developer", "Gamer", "Youtuber"],
-              typeSpeed: 150,
-              backSpeed: 150,
-              loop: true
-            })
-          </script>
+    </div>
+    <!--about me-->
+    <div class="about">
+      <div class="about-list">
+        <div class="about-list1">
+          <div class="about-list1-img"></div>
+          <div class="about-list1-head-text">
+            <h1>Dedication</h1>
+          </div>
+          <div class="about-list1-para-text">
+            <p>
+              I approach every project with a steadfast commitment to
+              excellence. My focus on achieving goals with perseverance and
+              integrity ensures success. Challenges inspire me to push
+              boundaries, turning obstacles into opportunities for growth and
+              delivering results that truly matter.
+            </p>
+          </div>
         </div>
-        <div class="button-text"><a href="#"><span class="auto-type-span">New to you</span></a>
+        <div class="about-list2">
+          <div class="about-list2-img"></div>
+          <div class="about-list2-head-text">
+            <h1>Smart Work</h1>
+          </div>
+          <div class="about-list2-para-text">
+            <p>
+              Efficiency and innovation guide my approach to problem-solving. I
+              believe in optimizing resources, simplifying complexity, and
+              achieving impactful outcomes. By blending creativity with
+              practicality, I strive to deliver solutions that are not just
+              effective but also time-sensitive and scalable.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="hero-img-container">
-        <div class="hero-img">
+        <div class="about-list3">
+          <div class="about-list3-img"></div>
+          <div class="about-list3-head-text">
+            <h1>Collaboration</h1>
+          </div>
+          <div class="about-list3-para-text">
+            <p>
+              Teamwork is at the core of my success. I value diverse ideas, open
+              communication, and collective effort to achieve common goals. By
+              fostering an environment of mutual respect, I ensure that every
+              voice is heard and every contribution is valued.
+            </p>
+          </div>
+        </div>
+        <div class="about-list4">
+          <div class="about-list4-img"></div>
+          <div class="about-list4-head-text">
+            <h1>Technology</h1>
+          </div>
+          <div class="about-list4-para-text">
+            <p>
+              Technology is my passion and my tool for creating change. I
+              embrace innovation, constantly exploring new advancements to stay
+              ahead. Whether through coding, design, or data, I harness the
+              power of tech to build impactful, future-ready solutions that make
+              a difference.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="social-menu">
-      <ul class="wrapper">
-        <li class="icon facebook">
-          <span class="tooltip social-menu-span">Facebook</span>
-          <span class="social-menu-span"><i class="fab fa-facebook-f"></i></span>
+    <!--about meee-->
+    <div class="about-me-section">
+      <div class="about-me">
+        <div class="about-me-container">
+          <div class="card__container">
+            <article class="card__article">
+              <img
+                src="img/about-img/about-me-img.webp"
+                alt="image"
+                class="card__img"
+              />
+
+              <div class="card__data">
+                <span class="card__description">Sourabh Singh</span>
+                <h2 class="card__title">Software Developer</h2>
+                <a href="#" class="card__button">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-me-text">
+        <h3 class="about-me-head1">About Me</h3>
+        <h1 class="about-me-head2">I Develop System that Works</h1>
+        <p class="about-me-para">
+          Hi, I'm Sourabh, a Computer Engineering student with a passion for web
+          development and technology. I love building intuitive and visually
+          appealing web experiences while continuously learning new tools and
+          techniques. I'm always eager to solve problems, create innovative
+          solutions, and collaborate on exciting projects.
+        </p>
+
+        <hr />
+        <div class="about-me-list">
+          <ul class="about-me-list-col1">
+            <li>Name</li>
+            <li>Age</li>
+            <li>Occupation</li>
+          </ul>
+          <ul class="about-me-list-col2">
+            <li>Sourabh Singh</li>
+            <li>17 Years</li>
+            <li>Software Engineer</li>
+          </ul>
+          <ul class="about-me-list-col3">
+            <li>Phone</li>
+            <li>Email</li>
+            <li>Nationality</li>
+          </ul>
+          <ul class="about-me-list-col4">
+            <li>+91 9970xxxxx1</li>
+            <li>
+              <a href="mailto:Sourabh3527@gmail.com">Sourabh3527@gmail.com</a>
+            </li>
+            <li>Indian</li>
+          </ul>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- TEXT MERQUEEE -->
+    <div class="text-marquee">
+      <div class="marquee">
+        <h3>
+          <div class="marquee-wrapper">
+            <div class="marquee-title">
+              / A senior <span class="text-stroke-black">web Develop</span>
+              from india
+              <span class="text-stroke-black">nashik</span> / i Develop
+              <span class="text-stroke-black">websites</span>
+              that Works
+              <span class="text-stroke-black">easy</span>
+            </div>
+            <div class="marquee-title">
+              / A senior <span class="text-stroke-black">web Develop</span>
+              from india
+              <span class="text-stroke-black">nashik</span> / i Develop
+              <span class="text-stroke-black">websites</span>
+              that Works
+              <span class="text-stroke-black">easy</span>
+            </div>
+          </div>
+        </h3>
+      </div>
+      <div class="marquee1">
+        <h3>
+          <div class="marquee-wrapper1">
+            <div class="marquee-title1">
+              I am <span class="text-stroke-black1">Open For</span>
+              new
+              <span class="text-stroke-black1">projects</span> Feel Free
+              <span class="text-stroke-black1">websites</span>
+              me
+              <span class="text-stroke-black1">.</span>
+            </div>
+            <div class="marquee-title1">
+              I am <span class="text-stroke-black1">Open For</span>
+              new
+              <span class="text-stroke-black1">projects</span>Feel Free
+              <span class="text-stroke-black1">To contact</span>
+              me
+              <span class="text-stroke-black1">.</span>
+            </div>
+          </div>
+        </h3>
+      </div>
+    </div>
+    <!-- my team section -->
+    <section class="team-section">
+      <h2>
+        Partnered with most of the<br />
+        <span>top people at each industry</span>
+      </h2>
+
+      <div class="team-carousel">
+        <button class="team-nav" onclick="scrollLeft()">&#8249;</button>
+
+        <div class="team-cards-container" id="team-cards">
+          <!-- Card -->
+          <div class="team-card">
+            <div class="card-image">
+              <img src="img/team/1.webp" alt="Miss Pratiksha" />
+              <div class="card-content">
+                <h3>Miss Pratiksha</h3>
+                <p class="designation">UI/UX Designer</p>
+              </div>
+            </div>
+
+            <div class="hover-content">
+              <h3>Miss Pratiksha</h3>
+              <p class="designation">UI/UX Designer</p>
+              <p class="team-desc">
+                Designing with purpose, creating with passion, a passionate
+                UI/UX designer who believes great design is not just how it
+                looks, but how it works. I specialize in creating clean,
+                user-friendly interfaces that not only look good but also solve
+                real problems. With a strong eye for detail and a love for
+                creative challenges, I strive to design experiences that are
+                both meaningful and memorable.
+              </p>
+              <button class="contact-btn">Contact Us</button>
+            </div>
+          </div>
+
+          <!-- Repeat similar cards -->
+          <div class="team-card">
+            <div class="card-image">
+              <img src="img/team/2.webp" alt="Tejas Patil" />
+            </div>
+            <div class="card-content">
+              <h3>Tejas Patil</h3>
+              <p class="designation">Product Manager</p>
+            </div>
+            <div class="hover-content">
+              <h3>Tejas Patil</h3>
+              <p class="designation">Product Manager</p>
+              <p class="team-desc">
+                Bridging ideas, teams, and execution - A results-driven Product
+                Manager with a passion for turning vision into value. I thrive
+                at the intersection of business, technology, and user needs,
+                leading cross-functional teams to build products that truly make
+                an impact. From ideation to launch, I focus on strategy,
+                clarity, and collaboration to deliver solutions that matter.
+              </p>
+              <button class="contact-btn">Contact Us</button>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="card-image">
+              <img src="img/team/3.webp" alt="David Sequiera" />
+            </div>
+            <div class="card-content">
+              <h3>David Sequiera</h3>
+              <p class="designation">Sales Closer</p>
+            </div>
+            <div class="hover-content">
+              <h3>David Sequiera</h3>
+              <p class="designation">Sales Closer</p>
+              <p class="team-desc">
+                Expert in high-ticket sales and lead conversion using persuasive
+                and ethical closing techniques.
+              </p>
+              <button class="contact-btn">Contact Us</button>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="card-image">
+              <img src="img/team/4.webp" alt="Emma Laurent" />
+            </div>
+            <div class="card-content">
+              <h3>Emma Laurent</h3>
+              <p class="designation">Business Mentor</p>
+            </div>
+            <div class="hover-content">
+              <h3>Emma Laurent</h3>
+              <p class="designation">Business Mentor</p>
+              <p class="team-desc">
+                Guiding startups and founders to build scalable, impactful
+                products and strong company culture.
+              </p>
+              <button class="contact-btn">Contact Us</button>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="card-image">
+              <img src="img/team/3.webp" alt="Liam Parker" />
+            </div>
+            <div class="card-content">
+              <h3>Liam Parker</h3>
+              <p class="designation">Finance Advisor</p>
+            </div>
+            <div class="hover-content">
+              <h3>Liam Parker</h3>
+              <p class="designation">Finance Advisor</p>
+              <p class="team-desc">
+                Helping individuals and companies grow their capital through
+                smart financial planning and investment strategies.
+              </p>
+              <button class="contact-btn">Contact Us</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="team-nav" onclick="scrollRight()">&#8250;</button>
+      </div>
+    </section>
+    <script>
+      const container = document.getElementById("team-cards");
+
+      function scrollLeft() {
+        container.scrollBy({ left: -320, behavior: "smooth" });
+      }
+
+      function scrollRight() {
+        container.scrollBy({ left: 320, behavior: "smooth" });
+      }
+    </script>
+    <!-- Portfoilio Section -->
+    <div class="portfolio-section">
+      <section class="port-portfolio">
+        <header class="port-section-head">
+          <h1>Some Of My Latest Works</h1>
+        </header>
+
+        <main class="port-mainContainer">
+          <!--  *****  Buttons Section Starts  *****  -->
+          <div class="port-button-group">
+            <button class="port-button active" data-filter="*">All</button>
+            <button class="port-button" data-filter=".design">Design</button>
+            <button class="port-button" data-filter=".development">
+              Development
+            </button>
+            <button class="port-button" data-filter=".front-end">
+              Front-End
+            </button>
+          </div>
+          <!--  *****  Buttons Section Ends  *****  -->
+
+          <!--  *****  Gallery Section Starts  *****  -->
+          <div class="port-gallery">
+            <!--  *****  Card 1 Starts  *****  -->
+            <div class="item design">
+              <img src="img/portfolio/design1.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 1 Ends  *****  -->
+
+            <!--  *****  Card 2 Starts  *****  -->
+            <div class="item design">
+              <img src="img/portfolio/design2.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 2 Ends  *****  -->
+
+            <!--  *****  Card 3 Starts  *****  -->
+            <div class="item development">
+              <img src="img/portfolio/website1.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 3 Ends  *****  -->
+
+            <!--  *****  Card 4 Starts  *****  -->
+            <div class="item development">
+              <img src="img/portfolio/website2.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 4 Ends  *****  -->
+
+            <!--  *****  Card 5 Starts  *****  -->
+            <div class="item development">
+              <img src="img/portfolio/website3.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 5 Ends  *****  -->
+
+            <!--  *****  Card 6 Starts  *****  -->
+            <div class="item front-end">
+              <img src="img/portfolio/logo1.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 6 Ends  *****  -->
+            <!--  *****  Card 7 Starts  *****  -->
+            <div class="item front-end">
+              <img src="img/portfolio/logo1.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 7 Ends  *****  -->
+            <!--  *****  Card 8 Starts  *****  -->
+            <div class="item front-end">
+              <img src="img/portfolio/logo1.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 8 Ends  *****  -->
+            <!--  *****  Card 9 Starts  *****  -->
+            <div class="item front-end">
+              <img src="img/portfolio/logo1.webp" />
+              <div class="port-overlay">
+                <a href="#">VIEW MORE</a>
+              </div>
+            </div>
+            <!--  *****  Card 9 Ends  *****  -->
+          </div>
+          <!--  *****  Gallery Section Ends  *****  -->
+        </main>
+      </section>
+
+      <!--   *****   JQuery Link   *****   -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+      <!--   *****   Isotope Filter Link   *****  -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+      <script type="text/javascript">
+        var $galleryContainer = $(".port-gallery").isotope({
+          itemSelector: ".item",
+          layoutMode: "fitRows",
+        });
+
+        $(".port-button-group .port-button").on("click", function () {
+          $(".port-button-group .port-button").removeClass("active");
+          $(this).addClass("active");
+
+          var value = $(this).attr("data-filter");
+          $galleryContainer.isotope({
+            filter: value,
+          });
+        });
+      </script>
+    </div>
+    <!-- nuber counter section -->
+    <div class="number-counter">
+      <div class="number-counter-text">
+        <div class="number-counter-text-l1">Fun Facts</div>
+        <div class="number-counter-text-l2">I Develop System that Works</div>
+        <div class="number-counter-text-l3">
+          I'm a passionate Computer Engineering student with a knack for web
+          development, design, and problem-solving. I love creating functional,
+          user-friendly, and visually appealing digital solutions. Constantly
+          learning and exploring new technologies to grow in the ever-evolving
+          tech world.
+        </div>
+      </div>
+
+      <div class="counters">
+        <div class="counters-b1">
+          <div class="counters-number">12</div>
+          <div class="counters-text">Years of Experience</div>
+        </div>
+        <div class="counters-b2">
+          <div class="counters-number">2K</div>
+          <div class="counters-text">Total Clients</div>
+        </div>
+        <div class="counters-b3">
+          <div class="counters-number">4K</div>
+          <div class="counters-text">Projects Completed</div>
+        </div>
+        <div class="counters-b4">
+          <div class="counters-number">30</div>
+          <div class="counters-text">Digital Products</div>
+        </div>
+      </div>
+    </div>
+    <!-- Awards & Achivements -->
+    <div class="awards-section">
+      <div class="awards-text">
+        <div class="awards-text-l1">Success Stories</div>
+        <div class="awards-text-l2">Awards & Achivements</div>
+      </div>
+      <hr />
+      <div class="achivements">
+        <div class="achiv-logo-1">
+          <div class="achiv-logo-1-img"></div>
+        </div>
+        <div class="achiv-title-1">
+          <div class="achiv-title-1-head">
+            Best Developer
+            <div class="achiv-title-1-year">2020</div>
+          </div>
+        </div>
+        <div class="achiv-designation-1">
+          <div class="achiv-designation-1-head">
+            Developer Association
+            <div class="achiv-designation-1-year">New York, Usa</div>
+          </div>
+        </div>
+        <div class="achiv-info-1">
+          I had the privilege of working at Google, where I honed my skills and
+          contributed to impactful projects. During my time there, I was honored
+          to receive the Best Developer Award, recognizing my dedication and
+          innovative solutions.
+        </div>
+      </div>
+      <hr />
+
+      <div class="achivements">
+        <div class="achiv-logo-2">
+          <div class="achiv-logo-2-img"></div>
+        </div>
+        <div class="achiv-title-2">
+          <div class="achiv-title-2-head">
+            Best Employee
+            <div class="achiv-title-2-year">2021</div>
+          </div>
+        </div>
+        <div class="achiv-designation-2">
+          <div class="achiv-designation-2-head">
+            Dev Internatioal
+            <div class="achiv-designation-2-year">London, England</div>
+          </div>
+        </div>
+        <div class="achiv-info-2">
+          I had the privilege of working at Google, where I honed my skills and
+          contributed to impactful projects. During my time there, I was honored
+          to receive the Best Developer Award, recognizing my dedication and
+          innovative solutions.
+        </div>
+      </div>
+      <hr />
+
+      <div class="achivements">
+        <div class="achiv-logo-3">
+          <div class="achiv-logo-3-img"></div>
+        </div>
+        <div class="achiv-title-3">
+          <div class="achiv-title-3-head">
+            Fastest Coder
+            <div class="achiv-title-1-year">2019</div>
+          </div>
+        </div>
+        <div class="achiv-designation-3">
+          <div class="achiv-designation-3-head">
+            Amazing Programmer
+            <div class="achiv-designation-3-year">Maharashtra, India</div>
+          </div>
+        </div>
+        <div class="achiv-info-3">
+          I had the privilege of working at Google, where I honed my skills and
+          contributed to impactful projects. During my time there, I was honored
+          to receive the Best Developer Award, recognizing my dedication and
+          innovative solutions.
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <section>
+      <div class="work-experience-container">
+        
+          <div class="work-image">
+          </div>
+
+          <div class="work-right">
+          <div class="work-title">
+            <div class="work-title-l1"><h3>Work Experience</h3></div>
+            <div class="work-title-l2">My Experience</div>             
+          </div>
+          <div class="work-para">
+           
+              I am a passionate Computer Engineering student <br>with a strong
+              interest in web development and design.
+            
+        </div>
+        <div class="work-list">
+        <ul>
+          <li class="work-list-item">
+
+            <div class="work-card">
+              <div class="work-card-inner">
+                <div class="work-card-front">
+                <span class="material-symbols-outlined">
+                    work
+                    </span>
+                </div>
+                <div class="work-card-back">
+                  <span class="material-symbols-outlined">
+                    work
+                    </span>                </div>
+              </div>
+            </div>            
+            
+            <div class="work-discription">
+            <div class="work-discription-title">
+              Senior System Engineer
+            </div>
+            <div class="work-discription-info">
+              Web Developer <span>2022 - Present</span>
+            </div>
+            <div class="work-discription-para">
+              <p>Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi.</p>
+             
+          </div>
+          </div>
+          </li>
+          <li class="work-list-item">
+
+            <div class="work-card">
+              <div class="work-card-inner">
+                <div class="work-card-front">
+                <span class="material-symbols-outlined">
+                    work
+                    </span>
+                </div>
+                <div class="work-card-back">
+                  <span class="material-symbols-outlined">
+                    work
+                    </span>                </div>
+              </div>
+            </div>            
+            
+            <div class="work-discription">
+            <div class="work-discription-title">
+              Data Architect
+            </div>
+            <div class="work-discription-info">
+              Easy Computers <span>( 2015 - 2018 ) </span>
+            </div>
+            <div class="work-discription-para">
+              <p>Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi.</p>
+             
+          </div>
+          </div>
+          </li>
+          <li class="work-list-item">
+
+            <div class="work-card">
+              <div class="work-card-inner">
+                <div class="work-card-front">
+                <span class="material-symbols-outlined">
+                    work
+                    </span>
+                </div>
+                <div class="work-card-back">
+                  <span class="material-symbols-outlined">
+                    work
+                    </span>                </div>
+              </div>
+            </div>            
+            
+            <div class="work-discription">
+            <div class="work-discription-title">
+              Web Developer
+
+            </div>
+            <div class="work-discription-info">
+              Bangla College<span> ( 2012 - 2015 )</span>
+            </div>
+            <div class="work-discription-para">
+              <p>Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi.</p>
+             
+          </div>
+          </div>
+          </li>
+        </ul>
+      </div>
+        </div>
+      </div>
+
+      <!-- education -->
+      <div class="work-experience-container">
+        <div class="work-right">
+        <div class="work-title">
+          <div class="work-title-l1"><h3>Education</h3></div>
+          <div class="work-title-l2">My Education</div>             
+        </div>
+        <div class="work-para">
+          <p>
+            I am a passionate Computer Engineering student <br>with a strong
+            interest in web development and design.
+          </p>
+      </div>
+      <div class="work-list">
+      <ul>
+        <li class="work-list-item">
+
+          <div class="work-card">
+            <div class="work-card-inner">
+              <div class="work-card-front">
+                <span class="material-symbols-outlined">
+                  school
+                  </span>
+              </div>
+              <div class="work-card-back">
+                <span class="material-symbols-outlined">
+                  school
+                  </span>               </div>
+            </div>
+          </div>            
+          
+          <div class="work-discription">
+          <div class="work-discription-title">
+            Masters in Computer Science
+          </div>
+          <div class="work-discription-info">
+            New York University <span>( 2012 - 2016 )</span>
+          </div>
+          <div class="work-discription-para">
+            <p>Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi.</p>
+           
+        </div>
+        </div>
         </li>
-        <li class="icon twitter">
-          <span class="tooltip social-menu-span">Twitter</span>
-          <span><a href="https://x.com/sourabh_singgh"><i class="fab fa-x-twitter"></i></a></span>
+        <li class="work-list-item">
+
+          <div class="work-card">
+            <div class="work-card-inner">
+              <div class="work-card-front">
+                <span class="material-symbols-outlined">
+                  school
+                  </span>
+              </div>
+              <div class="work-card-back">
+                <span class="material-symbols-outlined">
+                  school
+                  </span>               </div>
+            </div>
+          </div>            
+          
+          <div class="work-discription">
+          <div class="work-discription-title">
+            Bachelor in Computer Engineering
+          </div>
+          <div class="work-discription-info">
+            Dhaka University <span>( 2008 - 2011 )</span>
+          </div>
+          <div class="work-discription-para">
+            <p>Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi.</p>
+           
+        </div>
+        </div>
         </li>
-        <li class="icon instagram">
-          <span class="tooltip social-menu-span">Instagram</span>
-          <span class="social-menu-span"><i class="fab fa-instagram"></i></span>
-        </li>
-        <li class="icon github">
-          <span class="tooltip social-menu-span">Github</span>
-          <span class="social-menu-span"><i class="fab fa-github"></i></span>
-        </li>
-        <li class="icon youtube">
-          <span class="tooltip social-menu-span">Youtube</span>
-          <span class="social-menu-span"><i class="fab fa-youtube"></i></span>
+        <li class="work-list-item">
+
+          <div class="work-card">
+            <div class="work-card-inner">
+              <div class="work-card-front">
+                <span class="material-symbols-outlined">
+                  school
+                  </span>
+              </div>
+              <div class="work-card-back">
+                <span class="material-symbols-outlined">
+                  school
+                  </span>              </div>
+            </div>
+          </div>            
+          
+          <div class="work-discription">
+          <div class="work-discription-title">
+            Diploma in Graphic Design
+
+          </div>
+          <div class="work-discription-info">
+            Bangla College<span> ( 2012 - 2015 )</span>
+          </div>
+          <div class="work-discription-para">
+            <p>Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi.</p>
+        </div>
+        </div>
         </li>
       </ul>
     </div>
-  </div>
-  <!--about me-->
-  <div class="about">
-    <div class="about-list">
-      <div class="about-list1">
-        <div class="about-list1-img">
-        </div>
-        <div class="about-list1-head-text">
-          <h1> Dedication </h1>
-        </div>
-        <div class="about-list1-para-text">
-          <p>I approach every project with a steadfast commitment to excellence. My focus on achieving
-            goals
-            with perseverance and integrity ensures success. Challenges inspire me to push boundaries,
-            turning obstacles into opportunities for growth and delivering results that truly matter.
-
-          </p>
-        </div>
-
       </div>
-      <div class="about-list2">
-        <div class="about-list2-img">
-        </div>
-        <div class="about-list2-head-text">
-          <h1> Smart Work
-          </h1>
-        </div>
-        <div class="about-list2-para-text">
-          <p>Efficiency and innovation guide my approach to problem-solving. I believe in optimizing
-            resources, simplifying complexity, and achieving impactful outcomes. By blending creativity
-            with
-            practicality, I strive to deliver solutions that are not just effective but also
-            time-sensitive
-            and scalable.</p>
-        </div>
-
-      </div>
-      <div class="about-list3">
-        <div class="about-list3-img">
-        </div>
-        <div class="about-list3-head-text">
-          <h1> Collaboration </h1>
-        </div>
-        <div class="about-list3-para-text">
-          <p>Teamwork is at the core of my success. I value diverse ideas, open communication, and
-            collective
-            effort to achieve common goals. By fostering an environment of mutual respect, I ensure that
-            every voice is heard and every contribution is valued.</p>
-        </div>
-
-      </div>
-      <div class="about-list4">
-        <div class="about-list4-img">
-        </div>
-        <div class="about-list4-head-text">
-          <h1> Technology </h1>
-        </div>
-        <div class="about-list4-para-text">
-          <p>Technology is my passion and my tool for creating change. I embrace innovation, constantly
-            exploring new advancements to stay ahead. Whether through coding, design, or data, I harness
-            the
-            power of tech to build impactful, future-ready solutions that make a difference.</p>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-  <!--about meee-->
-  <div class="about-me-section">
-    <div class="about-me">
-      <div class="about-me-container">
-        <div class="card__container">
-          <article class="card__article">
-            <img src="img/about-img/about-me-img.webp" alt="image" class="card__img">
-
-            <div class="card__data">
-              <span class="card__description">Sourabh Singh</span>
-              <h2 class="card__title">Software Developer</h2>
-              <a href="#" class="card__button">Read More</a>
-            </div>
-          </article>
-        </div>
+      <div class="edu-image">
       </div>
     </div>
-
-
-    <div class="about-me-text">
-      <h3 class="about-me-head1">About Me</h3>
-      <h1 class="about-me-head2">I Develop System that Works</h1>
-      <p class="about-me-para">
-        Hi, I'm Sourabh, a Computer Engineering student with a passion for web development and technology. I
-        love building intuitive and visually appealing web experiences while continuously learning new tools
-        and
-        techniques. I'm always eager to solve problems, create innovative solutions, and collaborate on
-        exciting
-        projects.
-      </p>
-
-      <hr>
-      <div class="about-me-list">
-        <ul class="about-me-list-col1">
-          <li>Name</li>
-          <li>Age</li>
-          <li>Occupation</li>
-        </ul>
-        <ul class="about-me-list-col2">
-          <li>Sourabh Singh</li>
-          <li>17 Years</li>
-          <li>Software Engineer</li>
-        </ul>
-        <ul class="about-me-list-col3">
-          <li>Phone</li>
-          <li>Email</li>
-          <li>Nationality</li>
-        </ul>
-        <ul class="about-me-list-col4">
-          <li>+91 9970xxxxx1</li>
-          <li><a href="mailto:Sourabh3527@gmail.com">Sourabh3527@gmail.com</a></li>
-          <li>Indian</li>
-        </ul>
-      </div>
-      <hr>
-    </div>
-  </div>
-  <!-- TEXT MERQUEEE -->
-  <div class="text-marquee">
-    <div class="marquee">
-      <h3>
-        <div class="marquee-wrapper">
-          <div class="marquee-title">
-            / A senior <span class="text-stroke-black">web Develop</span>
-            from india
-            <span class="text-stroke-black">nashik</span> / i Develop
-            <span class="text-stroke-black">websites</span>
-            that Works
-            <span class="text-stroke-black">easy</span>
-          </div>
-          <div class="marquee-title">
-            / A senior <span class="text-stroke-black">web Develop</span>
-            from india
-            <span class="text-stroke-black">nashik</span> / i Develop
-            <span class="text-stroke-black">websites</span>
-            that Works
-            <span class="text-stroke-black">easy</span>
-          </div>
-        </div>
-      </h3>
-    </div>
-    <div class="marquee1">
-      <h3>
-        <div class="marquee-wrapper1">
-          <div class="marquee-title1">
-            I am <span class="text-stroke-black1">Open For</span>
-            new
-            <span class="text-stroke-black1">projects</span> Feel Free
-            <span class="text-stroke-black1">websites</span>
-            me
-            <span class="text-stroke-black1">.</span>
-          </div>
-          <div class="marquee-title1">
-            I am <span class="text-stroke-black1">Open For</span>
-            new
-            <span class="text-stroke-black1">projects</span>Feel Free
-            <span class="text-stroke-black1">To contact</span>
-            me
-            <span class="text-stroke-black1">.</span>
-          </div>
-        </div>
-      </h3>
-    </div>
-
-  </div>
-  <!-- my team section -->
-  <section class="team-section">
-    <h2>
-      Partnered with most of the<br />
-      <span>top people at each industry</span>
-    </h2>
-  
-    <div class="team-carousel">
-      <button class="team-nav" onclick="scrollLeft()">&#8249;</button>
-  
-      <div class="team-cards-container" id="team-cards">
-        <!-- Card -->
-        <div class="team-card">
-          <div class="card-image">
-            <img src="img/team/1.webp" alt="Miss Pratiksha" />
-            <div class="card-content">
-              <h3>Miss Pratiksha</h3>
-              <p class="designation">UI/UX Designer</p>
-            </div>
-          </div>
-          
-          <div class="hover-content">
-            <h3>Miss Pratiksha</h3>
-            <p class="designation">UI/UX Designer</p>
-            <p class="team-desc">Designing with purpose, creating with passion,  a passionate UI/UX designer who believes great design is not just how it looks, but how it works. I specialize in creating clean, user-friendly interfaces that not only look good but also solve real problems. With a strong eye for detail and a love for creative challenges, I strive to design experiences that are both meaningful and memorable.</p>
-            <button class="contact-btn">Contact Us</button>
-          </div>
-        </div>
-  
-        <!-- Repeat similar cards -->
-        <div class="team-card">
-          <div class="card-image">
-            <img src="img/team/2.webp" alt="Tejas Patil" />
-          </div>
-          <div class="card-content">
-            <h3>Tejas Patil</h3>
-            <p class="designation">Product Manager</p>
-          </div>
-          <div class="hover-content">
-            <h3>Tejas Patil</h3>
-            <p class="designation">Product Manager</p>
-            <p class="team-desc">Bridging ideas, teams, and execution - A results-driven Product Manager with a passion for turning vision into value. I thrive at the intersection of business, technology, and user needs, leading cross-functional teams to build products that truly make an impact. From ideation to launch, I focus on strategy, clarity, and collaboration to deliver solutions that matter.</p>
-            <button class="contact-btn">Contact Us</button>
-          </div>
-        </div>
-  
-        <div class="team-card">
-          <div class="card-image">
-            <img src="img/team/3.webp" alt="David Sequiera" />
-          </div>
-          <div class="card-content">
-            <h3>David Sequiera</h3>
-            <p class="designation">Sales Closer</p>
-          </div>
-          <div class="hover-content">
-            <h3>David Sequiera</h3>
-            <p class="designation">Sales Closer</p>
-            <p class="team-desc">Expert in high-ticket sales and lead conversion using persuasive and ethical closing techniques.</p>
-            <button class="contact-btn">Contact Us</button>
-          </div>
-        </div>
-  
-        <div class="team-card">
-          <div class="card-image">
-            <img src="img/team/4.webp" alt="Emma Laurent" />
-          </div>
-          <div class="card-content">
-            <h3>Emma Laurent</h3>
-            <p class="designation">Business Mentor</p>
-          </div>
-          <div class="hover-content">
-            <h3>Emma Laurent</h3>
-            <p class="designation">Business Mentor</p>
-            <p class="team-desc">Guiding startups and founders to build scalable, impactful products and strong company culture.</p>
-            <button class="contact-btn">Contact Us</button>
-          </div>
-        </div>
-  
-        <div class="team-card">
-          <div class="card-image">
-            <img src="img/team/3.webp" alt="Liam Parker" />
-          </div>
-          <div class="card-content">
-            <h3>Liam Parker</h3>
-            <p class="designation">Finance Advisor</p>
-          </div>
-          <div class="hover-content">
-            <h3>Liam Parker</h3>
-            <p class="designation">Finance Advisor</p>
-            <p class="team-desc">Helping individuals and companies grow their capital through smart financial planning and investment strategies.</p>
-            <button class="contact-btn">Contact Us</button>
-          </div>
-        </div>
-      </div>
-  
-      <button class="team-nav" onclick="scrollRight()">&#8250;</button>
-    </div>
-  </section>
-  <script>
-    const container = document.getElementById("team-cards");
-  
-    function scrollLeft() {
-      container.scrollBy({ left: -320, behavior: "smooth" });
-    }
-  
-    function scrollRight() {
-      container.scrollBy({ left: 320, behavior: "smooth" });
-    }
-  </script>
-  <!-- Portfoilio Section -->
-  <div class="portfolio-section">
-    <section class="port-portfolio">
-
-      <header class="port-section-head">
-        <h1>Some Of My Latest Works</h1>
-      </header>
-
-      <main class="port-mainContainer">
-
-        <!--  *****  Buttons Section Starts  *****  -->
-        <div class="port-button-group">
-          <button class="port-button active" data-filter="*">All</button>
-          <button class="port-button" data-filter=".design">Design</button>
-          <button class="port-button" data-filter=".development">Development</button>
-          <button class="port-button" data-filter=".front-end">Front-End</button>
-        </div>
-        <!--  *****  Buttons Section Ends  *****  -->
-
-        <!--  *****  Gallery Section Starts  *****  -->
-        <div class="port-gallery">
-
-          <!--  *****  Card 1 Starts  *****  -->
-          <div class="item design">
-            <img src="img/portfolio/design1.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 1 Ends  *****  -->
-
-          <!--  *****  Card 2 Starts  *****  -->
-          <div class="item design">
-            <img src="img/portfolio/design2.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 2 Ends  *****  -->
-
-          <!--  *****  Card 3 Starts  *****  -->
-          <div class="item development">
-            <img src="img/portfolio/website1.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 3 Ends  *****  -->
-
-          <!--  *****  Card 4 Starts  *****  -->
-          <div class="item development">
-            <img src="img/portfolio/website2.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 4 Ends  *****  -->
-
-          <!--  *****  Card 5 Starts  *****  -->
-          <div class="item development">
-            <img src="img/portfolio/website3.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 5 Ends  *****  -->
-
-          <!--  *****  Card 6 Starts  *****  -->
-          <div class="item front-end">
-            <img src="img/portfolio/logo1.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 6 Ends  *****  -->
-          <!--  *****  Card 7 Starts  *****  -->
-          <div class="item front-end">
-            <img src="img/portfolio/logo1.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 7 Ends  *****  -->
-          <!--  *****  Card 8 Starts  *****  -->
-          <div class="item front-end">
-            <img src="img/portfolio/logo1.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 8 Ends  *****  -->
-          <!--  *****  Card 9 Starts  *****  -->
-          <div class="item front-end">
-            <img src="img/portfolio/logo1.webp">
-            <div class="port-overlay">
-              <a href="#">VIEW MORE</a>
-            </div>
-          </div>
-          <!--  *****  Card 9 Ends  *****  -->
-        </div>
-        <!--  *****  Gallery Section Ends  *****  -->
-
-      </main>
-
+      
     </section>
-
-
-    <!--   *****   JQuery Link   *****   -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-    <!--   *****   Isotope Filter Link   *****  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-
-    <script type="text/javascript">
-      var $galleryContainer = $('.port-gallery').isotope({
-        itemSelector: '.item',
-        layoutMode: 'fitRows'
-      })
-
-      $('.port-button-group .port-button').on('click', function () {
-        $('.port-button-group .port-button').removeClass('active');
-        $(this).addClass('active');
-
-        var value = $(this).attr('data-filter');
-        $galleryContainer.isotope({
-          filter: value
-        })
-      })
-    </script>
-  </div>
-  <!-- nuber counter section -->
-  <div class="number-counter">
-    <div class="number-counter-text">
-      <div class="number-counter-text-l1">Fun Facts</div>
-      <div class="number-counter-text-l2">I Develop System that Works</div>
-      <div class="number-counter-text-l3">I'm a passionate Computer Engineering student with a knack for web
-        development, design, and problem-solving. I love creating functional, user-friendly, and visually appealing
-        digital solutions. Constantly learning and exploring new technologies to grow in the ever-evolving tech world.
-      </div>
-    </div>
-
-    <div class="counters">
-      <div class="counters-b1">
-        <div class="counters-number">12</div>
-        <div class="counters-text">Years of
-          Experience</div>
-      </div>
-      <div class="counters-b2">
-        <div class="counters-number">2K</div>
-        <div class="counters-text">Total
-          Clients
-        </div>
-      </div>
-      <div class="counters-b3">
-        <div class="counters-number">4K</div>
-        <div class="counters-text">Projects
-          Completed</div>
-      </div>
-      <div class="counters-b4">
-        <div class="counters-number">30</div>
-        <div class="counters-text">Digital
-          Products
-        </div>
-      </div>
-    </div>
-
-
-
-
-  </div>
-  <!-- Awards & Achivements -->
-  <div class="awards-section">
-    <div class="awards-text">
-      <div class="awards-text-l1">Success Stories</div>
-      <div class="awards-text-l2">Awards & Achivements</div>
-    </div>
-    <hr>
-    <div class="achivements">
-      <div class="achiv-logo-1">
-        <div class="achiv-logo-1-img"></div>
-      </div>
-      <div class="achiv-title-1">
-        <div class="achiv-title-1-head">
-          Best Developer
-          <div class="achiv-title-1-year">2020</div>
-        </div>
-      </div>
-      <div class="achiv-designation-1">
-        <div class="achiv-designation-1-head">
-          Developer Association
-          <div class="achiv-designation-1-year">New York, Usa</div>
-        </div>
-      </div>
-      <div class="achiv-info-1">
-        I had the privilege of working at Google, where I honed my skills and contributed to impactful projects. 
-        During my time there, I was honored to receive the Best Developer Award, recognizing my dedication and 
-        innovative solutions.
-      </div>
-    </div>
-    <hr>
-    
-    <div class="achivements">
-      <div class="achiv-logo-2">
-        <div class="achiv-logo-2-img"></div>
-      </div>
-      <div class="achiv-title-2">
-        <div class="achiv-title-2-head">
-           Best Employee
-          <div class="achiv-title-2-year">2021</div>
-        </div>
-      </div>
-      <div class="achiv-designation-2">
-        <div class="achiv-designation-2-head">
-          Dev Internatioal
-          <div class="achiv-designation-2-year">London, England</div>
-        </div>
-      </div>
-      <div class="achiv-info-2">
-        I had the privilege of working at Google, where I honed my skills and contributed to impactful projects. 
-        During my time there, I was honored to receive the Best Developer Award, recognizing my dedication and 
-        innovative solutions.
-      </div>
-    </div>
-    <hr>
-    
-    <div class="achivements">
-      <div class="achiv-logo-3">
-        <div class="achiv-logo-3-img"></div>
-      </div>
-      <div class="achiv-title-3">
-        <div class="achiv-title-3-head">
-          Fastest Coder
-          <div class="achiv-title-1-year">2019</div>
-        </div>
-      </div>
-      <div class="achiv-designation-3">
-        <div class="achiv-designation-3-head">
-          Amazing Programmer
-          <div class="achiv-designation-3-year">Maharashtra, India</div>
-        </div>
-      </div>
-      <div class="achiv-info-3">
-        I had the privilege of working at Google, where I honed my skills and contributed to impactful projects. 
-        During my time there, I was honored to receive the Best Developer Award, recognizing my dedication and 
-        innovative solutions.
-      </div>
-    </div>
-    <hr>
-</div>
-
-
-
-</body>
+  </body>
 </html>
