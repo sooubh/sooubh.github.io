@@ -200,7 +200,7 @@ nav {
 }
 
 .hero-background {
-  background-image: url("img/hero-section/slider-bg.webp");
+  background-image: url("img/hero-section/slider-bg-1.webp");
   align-items: center;
   justify-content: space-evenly;
   background-size: cover;
@@ -406,7 +406,7 @@ nav {
     z-index: 1;
   }
   .hero-background {
-    background-image: url("img/hero-section/slider-bg.webp");
+    background-image: url("img/hero-section/slider-bg-1.webp");
     justify-content: center;
     background-size: cover;
     width: 100%;
