@@ -2518,3 +2518,57 @@ hr {
     width: 100%;
   }
 }
+
+.circle-progress-cointainer{
+  display: flex;     
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  padding-top: 70px;
+  padding-left: 40px;
+  gap: 25px;
+  justify-content: center;
+
+}
+.circle-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.progress-text{
+  padding: 20px 0;
+  font-size: 1.5rem;
+}
+.circle-progress{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: conic-gradient(#13e30c 3.6deg, #bbb5b57e 0deg);
+  box-shadow: 0 0 10px #c5c3c3a4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-progress::before{
+  content: "";
+  position: absolute;
+  height: 185px;
+  width: 185px;
+  border-radius: 50%;
+  background-image: url("img/progress-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.progress-value{
+  position: relative;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000000;
+}               

@@ -14,11 +14,7 @@ function applyCursorRippleEffect(e) {
    }
   
 }
-// extra and optional part:
-const all = document.body.getElementsByTagName("*");
-for (var i = 0;  i < all.length; ++i) {
-  all[i].onclick = (event) => event.stopPropagation();
-}
+
 // Sidebar toggle functionality
 function showSidebar(){
   const sidebar = document.querySelector('.nav-list-mobile')
@@ -29,3 +25,4 @@ function hideSidebar(){
   sidebar.style.display = 'none'
 }
 // End of sidebar toggle functionality
+
