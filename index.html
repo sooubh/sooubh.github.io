@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="max-w-full overflow-x-hidden">
+<html lang="en">
   <head>
     <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
@@ -44,8 +44,8 @@
     />
 
     <!-- Main Stylesheets -->
-    <link href="./dist/output.css" rel="stylesheet"/>
-    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -65,89 +65,43 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
   </head>
 
-  <body
-    class="bg-[url('/img/body-bg.webp')] bg-contain max-w-full overflow-x-hidden"
-  >
+  <body>
     <header>
-      <nav
-        class="bg-[#282f36] h-[60px] top-0 w-full fixed flex items-center z-[1000] justify-between"
-      >
-        <div class="nav-logo h-14">
-          <div
-            class="logo bg-[url('/img/navbar-img/logo.webp')] bg-cover h-10 w-44"
-          ></div>
+      <nav>
+        <div class="nav-logo">
+          <div class="logo"></div>
         </div>
-        <div class="checkbutton w-[70vw]">
-          <input type="checkbox" id="check" class="hidden"/>
-          <label for="check" class="checkbtn text-[25px] text-white cursor-pointer hidden float-right pr-[30px]">
+        <div class="checkbutton">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
             <i class="fas fa-bars sidebar-logo" onclick="showSidebar()"
               ><a href="#"></a
             ></i>
-            <div
-              class="nav-list-mobile hidden fixed top-0 right-0 h-screen w-[250px] z-[999] bg-[rgba(255,255,255,0.692)] backdrop-blur-[10px] shadow-[-10px_0_10px_rgba(0,0,0,0.1)] justify-center leading-[50px]"
-            >
+            <div class="nav-list-mobile">
               <i
-                class="fa-solid fa-xmark close-menu pt-2.5 pl-2.5"
+                class="fa-solid fa-xmark close-menu"
                 onclick="hideSidebar()"
               ></i
               ><a href="#"></a>
-              <ul class="leading-[50px] mt-[250px]">
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Home</a></li>
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">About</a></li>
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Works</a></li>
-                <li class="list-none text-xl w-full">
-                  <a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Services</a>
-                </li>
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Contact</a></li>
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Blog</a></li>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Works</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
               </ul>
             </div>
           </label>
         </div>
-        <div class="nav-list flex">
-          <ul class="list-none flex pr-5">
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Works</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Blog</a
-              >
-            </li>
+        <div class="nav-list">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Works</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a></li>
           </ul>
         </div>
       </nav>
@@ -776,10 +730,7 @@
             <div class="work-title-l2">My Experience</div>
           </div>
           <div class="work-para">
-            I’m a dedicated Computer Engineering student with hands-on
-            experience in web development and design. Below are some of the
-            roles I’ve taken on to grow my skills and apply them in real-world
-            scenarios.
+            I’m a dedicated Computer Engineering student with hands-on experience in web development and design. Below are some of the roles I’ve taken on to grow my skills and apply them in real-world scenarios.
           </div>
           <div class="work-list">
             <ul>
@@ -795,17 +746,13 @@
                   </div>
                 </div>
                 <div class="work-discription">
-                  <div class="work-discription-title">
-                    Frontend Developer Intern
-                  </div>
+                  <div class="work-discription-title">Frontend Developer Intern</div>
                   <div class="work-discription-info">
                     CodeCrafters Technologies <span>(Jun 2024 - Sep 2024)</span>
                   </div>
                   <div class="work-discription-para">
                     <p>
-                      Built responsive UI components using HTML, CSS, and
-                      JavaScript. Collaborated with the UI/UX team to refine
-                      user interactions and improve website accessibility.
+                      Built responsive UI components using HTML, CSS, and JavaScript. Collaborated with the UI/UX team to refine user interactions and improve website accessibility.
                     </p>
                   </div>
                 </div>
@@ -822,17 +769,13 @@
                   </div>
                 </div>
                 <div class="work-discription">
-                  <div class="work-discription-title">
-                    Freelance Web Developer
-                  </div>
+                  <div class="work-discription-title">Freelance Web Developer</div>
                   <div class="work-discription-info">
                     Self-employed <span>(2023 - Present)</span>
                   </div>
                   <div class="work-discription-para">
                     <p>
-                      Designed and developed personal portfolios and business
-                      websites for local clients. Focused on performance
-                      optimization, SEO, and mobile-first design.
+                      Designed and developed personal portfolios and business websites for local clients. Focused on performance optimization, SEO, and mobile-first design.
                     </p>
                   </div>
                 </div>
@@ -849,17 +792,13 @@
                   </div>
                 </div>
                 <div class="work-discription">
-                  <div class="work-discription-title">
-                    UI Designer (Project-based)
-                  </div>
+                  <div class="work-discription-title">UI Designer (Project-based)</div>
                   <div class="work-discription-info">
                     Virtual Team Projects <span>(2023)</span>
                   </div>
                   <div class="work-discription-para">
                     <p>
-                      Participated in college-level hackathons and designed
-                      intuitive user interfaces for web applications using Figma
-                      and Adobe XD.
+                      Participated in college-level hackathons and designed intuitive user interfaces for web applications using Figma and Adobe XD.
                     </p>
                   </div>
                 </div>
@@ -869,7 +808,7 @@
         </div>
         <div class="work-image"></div>
       </div>
-
+    
       <!-- Education -->
       <div class="work-experience-container">
         <div class="edu-image"></div>
@@ -880,9 +819,7 @@
           </div>
           <div class="work-para">
             <p>
-              My academic journey reflects my deep interest in computing and
-              technology, with a focus on developing practical skills alongside
-              theoretical knowledge.
+              My academic journey reflects my deep interest in computing and technology, with a focus on developing practical skills alongside theoretical knowledge.
             </p>
           </div>
           <div class="work-list">
@@ -899,17 +836,13 @@
                   </div>
                 </div>
                 <div class="work-discription">
-                  <div class="work-discription-title">
-                    B.Tech in Computer Engineering
-                  </div>
+                  <div class="work-discription-title">B.Tech in Computer Engineering</div>
                   <div class="work-discription-info">
                     [Your College Name] <span>(2023 - 2027)</span>
                   </div>
                   <div class="work-discription-para">
                     <p>
-                      Coursework includes Data Structures, Web Development,
-                      Operating Systems, and Database Management. Actively
-                      involved in tech clubs and project-based learning.
+                      Coursework includes Data Structures, Web Development, Operating Systems, and Database Management. Actively involved in tech clubs and project-based learning.
                     </p>
                   </div>
                 </div>
@@ -926,16 +859,13 @@
                   </div>
                 </div>
                 <div class="work-discription">
-                  <div class="work-discription-title">
-                    Higher Secondary Education (HSC)
-                  </div>
+                  <div class="work-discription-title">Higher Secondary Education (HSC)</div>
                   <div class="work-discription-info">
                     [Your School Name] <span>(2021 - 2023)</span>
                   </div>
                   <div class="work-discription-para">
                     <p>
-                      Majored in Science with Computer Science as an elective.
-                      Participated in coding competitions and school tech fests.
+                      Majored in Science with Computer Science as an elective. Participated in coding competitions and school tech fests.
                     </p>
                   </div>
                 </div>
@@ -944,7 +874,7 @@
           </div>
         </div>
       </div>
-
+    
       <!-- Skills -->
       <div class="work-experience-container">
         <div class="work-right">
@@ -954,47 +884,35 @@
           </div>
           <div class="work-para">
             <p>
-              I constantly strive to upgrade my skills through hands-on projects
-              and online courses. Here’s a snapshot of my current proficiency
-              levels:
+              I constantly strive to upgrade my skills through hands-on projects and online courses. Here’s a snapshot of my current proficiency levels:
             </p>
           </div>
         </div>
         <div class="circle-progress-cointainer">
           <div class="circle-list">
-            <div class="circle-progress">
-              <span class="progress-value" id="circle1">85%</span>
-            </div>
+            <div class="circle-progress"><span class="progress-value" id="circle1">85%</span></div>
             <span class="progress-text">HTML & CSS</span>
           </div>
           <div class="circle-list">
-            <div class="circle-progress">
-              <span class="progress-value" id="circle2">75%</span>
-            </div>
+            <div class="circle-progress"><span class="progress-value" id="circle2">75%</span></div>
             <span class="progress-text">UI/UX Design</span>
           </div>
           <div class="circle-list">
-            <div class="circle-progress">
-              <span class="progress-value" id="circle3">70%</span>
-            </div>
+            <div class="circle-progress"><span class="progress-value" id="circle3">70%</span></div>
             <span class="progress-text">React</span>
           </div>
           <div class="circle-list">
-            <div class="circle-progress">
-              <span class="progress-value" id="circle4">60%</span>
-            </div>
+            <div class="circle-progress"><span class="progress-value" id="circle4">60%</span></div>
             <span class="progress-text">Backend (Node.js, Express)</span>
           </div>
           <div class="circle-list">
-            <div class="circle-progress">
-              <span class="progress-value" id="circle5">80%</span>
-            </div>
+            <div class="circle-progress"><span class="progress-value" id="circle5">80%</span></div>
             <span class="progress-text">Web Development</span>
           </div>
         </div>
       </div>
     </section>
-
-    <script src="script.js"></script>
-  </body>
+       
+<script src="script.js"></script>
+</body>
 </html>
