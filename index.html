@@ -44,8 +44,8 @@
     />
 
     <!-- Main Stylesheets -->
-    <link href="./dist/output.css" rel="stylesheet"/>
-    <link href="./dist/output.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet" />
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -68,90 +68,66 @@
   <body
     class="bg-[url('/img/body-bg.webp')] bg-contain max-w-full overflow-x-hidden"
   >
-    <header>
-      <nav
-        class="bg-[#282f36] h-[60px] top-0 w-full fixed flex items-center z-[1000] justify-between"
-      >
-        <div class="nav-logo h-14">
-          <div
-            class="logo bg-[url('/img/navbar-img/logo.webp')] bg-cover h-10 w-44"
-          ></div>
+  
+  <header>
+    <nav class="bg-[#282f36] h-[60px] top-0 w-full fixed flex items-center justify-between z-[1000]">
+        <div class="nav-logo h-14 mx-[30px] lg:mx-0">
+            <div class="logo bg-[url('/img/navbar-img/logo.webp')] bg-cover h-10 w-44">
+                <a href="#" aria-label="Company Logo"></a>
+            </div>
         </div>
         <div class="checkbutton w-[70vw]">
-          <input type="checkbox" id="check" class="hidden"/>
-          <label for="check" class="checkbtn text-[25px] text-white cursor-pointer hidden float-right pr-[30px]">
-            <i class="fas fa-bars sidebar-logo" onclick="showSidebar()"
-              ><a href="#"></a
-            ></i>
-            <div
-              class="nav-list-mobile hidden fixed top-0 right-0 h-screen w-[250px] z-[999] bg-[rgba(255,255,255,0.692)] backdrop-blur-[10px] shadow-[-10px_0_10px_rgba(0,0,0,0.1)] justify-center leading-[50px]"
-            >
-              <i
-                class="fa-solid fa-xmark close-menu pt-2.5 pl-2.5"
-                onclick="hideSidebar()"
-              ></i
-              ><a href="#"></a>
-              <ul class="leading-[50px] mt-[250px]">
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Home</a></li>
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">About</a></li>
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Works</a></li>
-                <li class="list-none text-xl w-full">
-                  <a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Services</a>
-                </li>
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Contact</a></li>
-                <li class="list-none text-xl w-full"><a href="" class=" hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 m-2.5 mx-1.25 relative transition-all duration-500 w-full">Blog</a></li>
-              </ul>
+            <input type="checkbox" id="check" class="hidden" />
+            <label for="check" class="checkbtn md:hidden text-[25px] text-white cursor-pointer float-right pr-[30px]" aria-label="Toggle Navigation">
+                <i class="fas fa-bars sidebar-logo" onclick="toggleSidebar()"></i>
+            </label>
+            <div class="nav-list-mobile hidden fixed top-0 right-0 h-screen w-[250px] z-[999] bg-[rgba(255,255,255,0.692)] backdrop-blur-[10px] shadow-[-10px_0_10px_rgba(0,0,0,0.1)] justify-center leading-[50px]" id="mobile-menu">
+                <div class="absolute top-2.5 left-2.5">
+                    <i class="fa-solid fa-xmark close-menu text-2xl cursor-pointer" onclick="toggleSidebar()"></i>
+                </div>
+                <ul class="leading-[50px] mt-[250px] space-y-4">
+                    <li class="list-none text-xl w-full">
+                        <a href="#home" class="block hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 mx-1.25 relative transition-all duration-500 w-full">Home</a>
+                    </li>
+                    <li class="list-none text-xl w-full">
+                        <a href="#about" class="block hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 mx-1.25 relative transition-all duration-500 w-full">About</a>
+                    </li>
+                    <li class="list-none text-xl w-full">
+                        <a href="#works" class="block hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 mx-1.25 relative transition-all duration-500 w-full">Works</a>
+                    </li>
+                    <li class="list-none text-xl w-full">
+                        <a href="#services" class="block hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 mx-1.25 relative transition-all duration-500 w-full">Services</a>
+                    </li>
+                    <li class="list-none text-xl w-full">
+                        <a href="#contact" class="block hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 mx-1.25 relative transition-all duration-500 w-full">Contact</a>
+                    </li>
+                    <li class="list-none text-xl w-full">
+                        <a href="#blog" class="block hover:text-[#0096c7] hover:animate-neonFlicker text-[#3f3a3b] no-underline text-2xl p-2.5 px-5 mx-1.25 relative transition-all duration-500 w-full">Blog</a>
+                    </li>
+                </ul>
             </div>
-          </label>
         </div>
-        <div class="nav-list flex">
-          <ul class="list-none flex pr-5">
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Works</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                href=""
-                class=" hover:text-[#0096c7] hover:animate-neonFlicker text-white no-underline p-[10px] px-[20px] text-[20px] m-[9px] mx-[5px] relative transition-all duration-500 ease-linear"
-                >Blog</a
-              >
-            </li>
-          </ul>
+        <div class="nav-list md:flex hidden md:w-auto">
+            <ul class="list-none flex space-x-6">
+                <li><a href="#home" class="hover:text-[#0096c7] text-white no-underline p-[10px] text-[20px]  relative transition-all duration-500 ease-linear">Home</a></li>
+                <li><a href="#about" class="hover:text-[#0096c7] text-white no-underline p-[10px] text-[20px]  relative transition-all duration-500 ease-linear">About</a></li>
+                <li><a href="#works" class="hover:text-[#0096c7] text-white no-underline p-[10px] text-[20px]  relative transition-all duration-500 ease-linear">Works</a></li>
+                <li><a href="#services" class="hover:text-[#0096c7] text-white no-underline p-[10px] text-[20px]  relative transition-all duration-500 ease-linear">Services</a></li>
+                <li><a href="#contact" class="hover:text-[#0096c7] text-white no-underline p-[10px] text-[20px]  relative transition-all duration-500 ease-linear">Contact</a></li>
+                <li><a href="#blog" class="hover:text-[#0096c7] text-white no-underline p-[10px] text-[20px]  relative transition-all duration-500 ease-linear">Blog</a></li>
+            </ul>
         </div>
-      </nav>
-    </header>
+    </nav>
+</header>
+
+<script>
+    function toggleSidebar() {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const check = document.getElementById('check');
+        mobileMenu.classList.toggle('show');
+        check.checked = !check.checked;
+    }
+</script>
     <!-- HERO -->
     <div class="hero">
       <div class="hero-background">

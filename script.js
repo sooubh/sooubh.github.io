@@ -14,18 +14,6 @@ function applyCursorRippleEffect(e) {
    }
 }
 
-// Sidebar toggle functionality
-function showSidebar() {
-   const sidebar = document.querySelector('.nav-list-mobile');
-   sidebar.style.display = 'flex';
-}
-
-function hideSidebar() {
-   const sidebar = document.querySelector('.nav-list-mobile');
-   sidebar.style.display = 'none';
-}
-// End of sidebar toggle functionality
-
 let circleProgressElements = document.querySelectorAll('.circle-progress');
 let progressValueElements = document.querySelectorAll('.progress-value'); 
 
