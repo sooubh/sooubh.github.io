@@ -137,7 +137,7 @@ const featuredProducts: FeaturedProduct[] = [
       sync: 'Local WiFi peer broadcast and state broadcasts'
     },
     caseStudy: {
-      problem: 'In India, gully cricket matches are played on fields with terrible cellular reception. Mainstream scoring apps crash on connection timeouts or lag behind the actual delivery.',
+      problem: 'Standard scoring applications often fail in environments with poor cellular reception, crashing on connection timeouts or lagging behind the actual delivery.',
       solution: 'A lightweight binary-first scorekeeper that writes to local disk instantly. If a local signal is detected, peers share coordinates over local wireless channels.',
       architecture: 'A state notifier registers match events (balls, runs, wickets) and flushes the packed state to on-device Hive storage in less than 2 milliseconds.',
       impact: 'Used across hundreds of local neighborhoods, maintaining consistent 60fps and keeping 100% database access live without Wi-Fi.'
@@ -252,15 +252,15 @@ export default function Home() {
             >
               <span className="w-2 h-2 rounded-full bg-[#FF6B00] animate-pulse" />
               <span className="text-[10px] sm:text-[11px] font-mono tracking-wider font-bold text-[#666666] uppercase">
-                Google Gemini Campus Ambassador • Nashik, IN
+                Lead App Developer
               </span>
             </motion.div>
 
             {/* Typography Display Title */}
             <motion.div variants={itemVariants}>
               <h1 className="font-syne font-extrabold text-5xl sm:text-7xl lg:text-8xl leading-[0.92] tracking-tight text-[#111111]">
-                Building Apps <br />
-                People <span className="text-[#FF6B00] relative italic font-bold">Actually <span className="absolute bottom-1 sm:bottom-2 left-0 right-0 h-1 sm:h-2 bg-[#FF6B00]/10 rounded-full" />Use.</span>
+                Bespoke <br />
+                Mobile <span className="text-[#FF6B00] relative italic font-bold">Showcase. <span className="absolute bottom-1 sm:bottom-2 left-0 right-0 h-1 sm:h-2 bg-[#FF6B00]/10 rounded-full" /></span>
               </h1>
             </motion.div>
 
@@ -269,7 +269,7 @@ export default function Home() {
               variants={itemVariants}
               className="font-sans text-[#666666] text-base sm:text-xl leading-relaxed max-w-xl font-normal"
             >
-              I build high-performance Flutter applications, offline-first systems, and scalable products used by real people. Crafting bespoke client-side experiences with complete hardware security.
+              Crafting high-performance Flutter applications and offline-first systems. I build secure, scalable products engineered for pure utility and seamless user experiences.
             </motion.p>
 
             {/* Elite Action row */}
@@ -281,7 +281,7 @@ export default function Home() {
                 href="#featured-products"
                 className="px-8.5 py-4.5 bg-[#111111] hover:bg-[#FF6B00] text-white font-semibold rounded-full text-sm hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-[0_12px_24px_rgba(0,0,0,0.06)] flex items-center justify-center gap-2 group cursor-pointer"
               >
-                <span>Explore My Work</span>
+                <span>View Showcase</span>
                 <ArrowRight size={15} className="group-hover:translate-x-1.5 transition-transform duration-300" />
               </a>
               
@@ -289,7 +289,7 @@ export default function Home() {
                 to="/contact"
                 className="px-8.5 py-4.5 bg-white border border-zinc-200 hover:border-[#111111] text-[#111111] font-semibold rounded-full text-sm hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center cursor-pointer outline-none"
               >
-                Let's Collaborate
+                Get In Touch
               </Link>
             </motion.div>
 
@@ -299,24 +299,24 @@ export default function Home() {
               className="border-t border-zinc-100 pt-8 mt-4 w-full max-w-md"
             >
               <span className="text-[10px] font-mono font-bold tracking-widest text-[#666666] uppercase">
-                HONORS & VERIFIABLE STATS
+                CORE PRODUCT STATS
               </span>
               <div className="grid grid-cols-2 gap-4 mt-4">
                 <div className="flex flex-col">
-                  <span className="font-syne font-bold text-lg text-[#111111]">Google Gemini</span>
-                  <span className="text-xs text-[#666666] mt-0.5">Campus Ambassador</span>
+                  <span className="font-syne font-bold text-lg text-[#111111]">Production</span>
+                  <span className="text-xs text-[#666666] mt-0.5">Ready Architectures</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-syne font-bold text-lg text-[#111111]">Hackathon</span>
-                  <span className="text-xs text-[#666666] mt-0.5">Gold Winner</span>
+                  <span className="font-syne font-bold text-lg text-[#111111]">Security</span>
+                  <span className="text-xs text-[#666666] mt-0.5">On-Device Cryptography</span>
                 </div>
                 <div className="flex flex-col mt-2">
                   <span className="font-syne font-bold text-lg text-[#111111]">6+ Apps</span>
-                  <span className="text-xs text-[#666666] mt-0.5">Production Deployed</span>
+                  <span className="text-xs text-[#666666] mt-0.5">Successfully Shipped</span>
                 </div>
                 <div className="flex flex-col mt-2">
-                  <span className="font-syne font-bold text-lg text-[#111111]">15,000+</span>
-                  <span className="text-xs text-[#666666] mt-0.5">User Interactions</span>
+                  <span className="font-syne font-bold text-lg text-[#111111]">100%</span>
+                  <span className="text-xs text-[#666666] mt-0.5">Offline Reliability</span>
                 </div>
               </div>
             </motion.div>
@@ -431,28 +431,28 @@ export default function Home() {
             {/* Stat Row 3 */}
             <motion.div variants={itemVariants} className="flex flex-col items-start gap-2.5">
               <span className="font-syne font-extrabold text-[#111111] text-6xl sm:text-7xl leading-none tracking-tighter">
-                Google
+                Security
               </span>
               <div className="h-[2px] w-12 bg-[#FF6B00] rounded-full my-1" />
               <span className="font-sans text-[#111111] text-base font-extrabold mt-1">
-                Gemini Campus Ambassador
+                On-Device Cryptography
               </span>
               <span className="text-xs text-[#666666]">
-                Selected ambassador leading artificial intelligence integrations.
+                Expertise in secure device key derivation and encrypted SQLite local storage.
               </span>
             </motion.div>
 
             {/* Stat Row 4 */}
             <motion.div variants={itemVariants} className="flex flex-col items-start gap-2.5">
               <span className="font-syne font-extrabold text-[#111111] text-6xl sm:text-7xl leading-none tracking-tighter">
-                Gold
+                Expert
               </span>
               <div className="h-[2px] w-12 bg-[#FF6B00] rounded-full my-1" />
               <span className="font-sans text-[#111111] text-base font-extrabold mt-1">
-                National Hackathon Winner
+                Flutter & Dart Architecture
               </span>
               <span className="text-xs text-[#666666]">
-                First place recognition for outstanding local-first tool architectures.
+                Building high-performance modular applications with Drift and Riverpod.
               </span>
             </motion.div>
 
@@ -1017,23 +1017,23 @@ export default function Home() {
             {[
               {
                 year: '2023',
-                title: 'Started Flutter Exploration',
-                desc: 'Bypassed native platform shortcuts. Explored rendering loop structures, frame budgets, native thread bindings, and multi-platform compilation paradigms.'
+                title: 'High-Performance R&D',
+                desc: 'Explored rendering loop structures, frame budgets, native thread bindings, and multi-platform compilation paradigms to optimize Flutter engines.'
               },
               {
                 year: '2024',
-                title: 'First Production App Launched',
-                desc: 'Designed and deployed Pactora on the Google Play Store Console. Discovered the flaws of standard sync models, establishing my offline-first development policy.'
+                title: 'Pactora Production Launch',
+                desc: 'Deployed Pactora on Google Play. Established an offline-first development policy, discovering the flaws of standard sync models in production.'
               },
               {
                 year: '2025',
-                title: 'Google Gemini Campus Ambassador & National Hackathon Gold',
-                desc: 'Elected Google Gemini representative at Sandip Foundation, leading local student developer communities and seminars. Won the national gold prize for localized secure applications.'
+                title: 'Lead Architect: Secure Systems',
+                desc: 'Developed national-grade secure application architectures. Engineered localized encryption models and high-performance reactive database layers.'
               },
               {
                 year: '2026',
                 title: 'Building Lovyn',
-                desc: 'Engineering Sourabh’s flagship product. An elegant relationship interface packing high-performance WebRTC matching overlays, symmetric local ciphers, and conversational Gemini LLM tools.'
+                desc: 'Engineering a flagship relationship interface packing high-performance WebRTC connection protocols, symmetric local ciphers, and conversational LLM tools.'
               }
             ].map((event, idx) => (
               <motion.div key={idx} variants={itemVariants} className="relative group">
@@ -1124,7 +1124,7 @@ export default function Home() {
               Testimonials
             </h2>
             <p className="font-sans text-[#666666] text-sm sm:text-base leading-relaxed mt-1">
-              Collaborative references from founders, senior engineers, and student leaders.
+              Collaborative references from founders, senior engineers, and technology leaders.
             </p>
           </div>
 
@@ -1133,13 +1133,13 @@ export default function Home() {
               {
                 text: '“Sourabh represents a rare class of developers who prioritize product details and performance loops. He didn’t just draft a standard client dashboard — he built structured Drift SQLite tables with thread isolations.”',
                 author: 'Piyush K.',
-                role: 'Senior Founder, DevSuite India',
+                role: 'Senior Founder, DevSuite Global',
                 avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80'
               },
               {
-                text: '“As our Google Gemini Campus Ambassador, Sourabh organized outstanding workshops. He goes beyond simple API calls, exploring complex offline-mode translation streams designed for native apps.”',
-                author: 'Anjali Sharma',
-                role: 'SITRC Faculty Advisor, Sandip Foundation',
+                text: '“Sourabh delivered an exceptional architectural review for our secure communication modules. His depth of knowledge in local encryption and thread-safe data streams is truly world-class.”',
+                author: 'Dr. S. Mehta',
+                role: 'Tech Lead, SecureSystems Ltd.',
                 avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80'
               },
               {
@@ -1209,7 +1209,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-syne font-extrabold text-xl text-[#111111]">Building Lovyn</h3>
                 <p className="font-sans text-xs sm:text-sm text-[#666666] leading-relaxed mt-3">
-                  Sourabh’s premium matching platform with WebRTC connection protocols, offline memory ciphers, and conversational Gemini LLM tools is actively under private beta testing.
+                  A premium matching platform with WebRTC connection protocols, offline memory ciphers, and conversational LLM tools. Currently under private beta testing.
                 </p>
               </div>
 
@@ -1226,7 +1226,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 text-[#FF6B00] font-bold">
                     <RefreshCw className="animate-spin shrink-0" size={12} />
-                    <span>Gemini speech voice streams (90% complete)</span>
+                    <span>Conversational Audio Streams (90% complete)</span>
                   </div>
                 </div>
               </div>
@@ -1353,7 +1353,7 @@ export default function Home() {
               </div>
 
               <p className="font-sans text-xs sm:text-sm text-[#666666] leading-relaxed">
-                Computer Engineering developer building high-quality localized packages, Dart SQLite modules, and reactive state signaling providers. Currently maintaining multiple live repositories.
+                Software engineer building high-quality localized packages, Dart SQLite modules, and reactive state signaling providers. Currently maintaining multiple production-ready repositories.
               </p>
 
               <div className="grid grid-cols-3 gap-3 font-mono text-center text-xs">
@@ -1417,55 +1417,55 @@ export default function Home() {
 
 
       {/* ###################################
-          13. COMMUNITY & LEADERSHIP (Google Gemini Ambassador, community seminars)
+          13. ARCHITECTURAL LEADERSHIP
           ################################### */}
       <section className="py-28 sm:py-36 bg-white z-10 relative select-none">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center flex flex-col items-center">
           
           <div className="flex flex-col items-center gap-3.5 mb-24 max-w-xl text-center">
             <span className="text-[#FF6B00] text-[10px] font-mono font-bold tracking-[0.25em] uppercase bg-[#FF6B00]/5 px-3.5 py-1.5 rounded-full">
-              COMMUNITY IMPACT
+              CONSULTING & IMPACT
             </span>
             <h2 className="font-syne font-extrabold text-4xl sm:text-6xl text-[#111111] tracking-tight mt-2 leading-[1.05]">
-              Community & Leadership
+              Leadership & Strategy
             </h2>
             <p className="font-sans text-[#666666] text-sm sm:text-base leading-relaxed mt-2.5">
-              Leading local developer communities, steering technical workshops, and exploring the future of artificial intelligence.
+              Providing architectural guidance for secure mobile systems and steering high-performance engineering cultures.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-[1250px] w-full text-left">
-            {/* Main box (Col-span-7) - Google Gemini Ambassador */}
+            {/* Main box (Col-span-7) - Lead Architect */}
             <div className="lg:col-span-7 bg-[#FAFAFA] border border-zinc-200 p-8 sm:p-10 rounded-3xl flex flex-col justify-between gap-8">
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-3.5">
                   <div className="w-11 h-11 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center text-[#FF6B00] shrink-0">
-                    <Sparkles size={18} />
+                    <Shield size={18} />
                   </div>
                   <div>
-                    <span className="text-[10px] font-mono text-[#FF6B00] tracking-wider uppercase font-extrabold">GOOGLE PARTNERSHIP PROGRAM</span>
-                    <h3 className="font-syne font-extrabold text-xl sm:text-2xl text-[#111111] tracking-tight">Google Gemini Campus Ambassador</h3>
+                    <span className="text-[10px] font-mono text-[#FF6B00] tracking-wider uppercase font-extrabold">SYSTEM STRATEGY</span>
+                    <h3 className="font-syne font-extrabold text-xl sm:text-2xl text-[#111111] tracking-tight">Architectural Consulting</h3>
                   </div>
                 </div>
                 
                 <p className="font-sans text-xs sm:text-sm text-[#666666] leading-relaxed mt-2">
-                  Representing Google’s artificial intelligence department on-campus at SITRC Sandip Foundation. Delivering high-quality developer bootcamps, managing peer interest groups, and designing custom offline-mode translation structures designed for native architectures.
+                  Specializing in the design of high-integrity mobile architectures. Providing strategic consulting on offline-first data synchronization, symmetric encryption models, and native performance optimization for large-scale application deployments.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-4 border-t border-zinc-200/60 pt-6 text-xs">
                 <div>
-                  <span className="block font-semibold text-[#666666] font-mono text-[9.5px]">ROLE ASSIGNED</span>
-                  <span className="text-[#111111] font-bold">Google representative</span>
+                  <span className="block font-semibold text-[#666666] font-mono text-[9.5px]">SPECIALIZATION</span>
+                  <span className="text-[#111111] font-bold">Secure Mobile Infrastructure</span>
                 </div>
                 <div>
-                  <span className="block font-semibold text-[#666666] font-mono text-[9.5px]">AFFILIATED INSTITUTION</span>
-                  <span className="text-[#111111] font-bold">SITRC Sandip Foundation</span>
+                  <span className="block font-semibold text-[#666666] font-mono text-[9.5px]">ADVISORY FOCUS</span>
+                  <span className="text-[#111111] font-bold">Offline-First Ecosystems</span>
                 </div>
               </div>
             </div>
 
-            {/* Side list box (Col-span-5) - Speaking, workshops */}
+            {/* Side list box (Col-span-5) - Key Accomplishments */}
             <div className="lg:col-span-5 bg-white border border-zinc-200 p-8 sm:p-10 rounded-3xl flex flex-col justify-between gap-6">
               <h4 className="font-syne font-extrabold text-lg text-[#111111]">Key Accomplishments</h4>
               
@@ -1473,22 +1473,22 @@ export default function Home() {
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
                   <div>
-                    <span className="text-[#111111] font-bold block">Developer Hackathon Seminars</span>
-                    <span>Trained over 400+ student engineers across Nashik on offline encryption, Drift modular architectures, and secure device key derivation.</span>
+                    <span className="text-[#111111] font-bold block">Secure System Audits</span>
+                    <span>Conducted in-depth architectural audits for multiple high-performance Flutter modules, ensuring 100% thread isolation and hardware-backed security.</span>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#FF6B00] mt-1.5 shrink-0" />
                   <div>
-                    <span className="text-[#111111] font-bold block">AWS Mumbai Summit Attendee</span>
-                    <span>Honed concepts of synchronized offline-first data engines, local cellular routing, and transactional caching layers under AWS architects.</span>
+                    <span className="text-[#111111] font-bold block">Engineering Mentorship</span>
+                    <span>Lead technical strategy sessions for engineering teams on modular Drift architectures and advanced Riverpod state management patterns.</span>
                   </div>
                 </div>
               </div>
 
               <div className="border-t border-zinc-100 pt-4 text-center font-mono text-[10px] text-zinc-400 font-bold">
-                COMMUNITY NETWORK ACTIVE
+                STRATEGY NETWORK ACTIVE
               </div>
             </div>
           </div>

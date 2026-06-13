@@ -20,7 +20,7 @@ export default function Footer() {
           SOOUBH · SHAPING MOBILE INTERFACES
         </p>
         <p className="text-center text-xs text-zinc-400 font-mono mt-1">
-          Built with React & ThreeJS by Sooubh &bull; Nashik &bull; 2026
+          Built with React & ThreeJS by Sooubh &bull; 2026
         </p>
       </div>
     </footer>
